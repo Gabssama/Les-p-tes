@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Formulaire</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+</head>
+
+<body>
+	<div id=bloc_page>
+	<header>
+			<p>LES PATES</p>
+		<nav>
+			<p>
+				<a href="../index.html">Accueil |</a>
+				<a href="../html/questionnaire.html"> Vos habitudes |</a>
+				<a href="../html/lesrecettes.html"> Les Recettes |</a>
+				<a href="../html/formulaire_pate.html">Contact</a>
+			</p>
+		</nav>
+	</header>
+	
+		<form method="get" action="https://www.barilla.com/fr-fr/">
+			<p>
+				<fieldset class=field>
+					<legend>Coordonnées</legend>
+					
+						<label  for="Nom" class=maison>Nom</label><input class=profil type="text" id="nom" name="nom" placeholder="Nom">
+						<label  for="Prenom" class=labelx>Prénom</label><input class=profil type="text" id="prenom" name="prenom" placeholder="Prénom">
+						<label  for="Email" class=labelx>E-mail</label><input class=profil type="email" id="email" name="email" placeholder="E-mail" multiple>
+						<label  for="Ville" class=labelx>Ville</label><input class=profil type="text" id="ville" name="ville" placeholder="Ville">
+						<label  for="Datedenaissance" class=labelx>Date de naissance</label><input class=profil type="date" id="date" name="date">
+						<label  for="Numérodetelephone" class=labelx>Téléphone</label><input class=profil type="tel" id="tel" name="tel" placeholder ="Telephone">
+					
+				</fieldset>
+			</p>
+
+			<fieldset class=field>
+				<legend>Avis</legend>
+					<p>Etes vous :</p>
+					<input type="radio" name="sexe" value="Vous êtes un homme" />un homme
+					<input type="radio" name="sexe" value="Vous êtes une femme" />une femme
+				
+					<p>Quel type de pâtes préférez vous?</p>
+						<select>
+						  <option>Cheveux d'ange/Cappelli di angelo </option>
+						  <option>Coquilles/Conchiglie</option>
+						  <option>Lasagnes</option>
+						  <option>Macaronis</option>
+						  <option>Orecchiettes</option>
+						  <option>Papillons/Farfalles</option>
+						  <option>Pennes</option>
+						  <option>Spaghettis</option>
+						  <option>Tagliatelles</option>
+						  <option>Torsades/Fusillis</option>
+						</select>
+					<p>A quelle fréquence mangez vous des pâtes?</p>
+						<select>
+						  <option> moins d'une fois </option>
+						  <option selected> 1 à 2 fois</option>
+						  <option>2 à 4 fois </option>
+						  <option> 4 à 6 fois </option>
+						  <option> Plus de 6 fois</option>
+						</select>
+								Par semaine.
+
+					<p>Parmi ces recettes, selectionnez vos préférées :<br>
+						<input type="checkbox" name="recette" value="Spaghettis bolognaise" />Spaghettis bolognaise
+						<input type="checkbox" name="recette" value="Pâtes Carbonara" /> Pâtes Carbonarra
+						<input type="checkbox" name="recette" value="Gnocchis au fromage" /> Gnocchis au fromage
+						<input type="checkbox" name="recette" value="Lasagnes" /> Lasagnes
+						<input type="checkbox" name="recette" value="Penne à l'ariabiata" /> Penne a l'arabiata
+						<input type="checkbox" name="recette" value="Linguines aux fruits de mer" /> Linguines aux fruits de mer
+						<input type="checkbox" name="recette" value="Pâtes au beurre" /> Pâtes au beurre
+						<input type="checkbox" name="recette" value="Gratins de maccaronis" /> Gratins de maccaronis
+						<input type="checkbox" name="recette" value="Pâtes jambon" /> Pâtes jambon
+					</p>	 
+						Indiquez ci-dessous le nom de votre recette originale préférée :
+						<textarea id="recette" name="recette" rows="5" cols="33" placeholder="Votre recette personelle..."></textarea>
+
+			</fieldset>
+			
+			<fieldset class=field>
+				<legend> Satisfaction</legend>
+					<h2> Avez-vous apprecié ce formulaire? </h2>
+						<input type="radio" name="satifs" value="Oui" /> Oui, trés agréable..
+						<input type="radio" name="satifs" value="Non" /> Non, trés redondant..
+						<input type ="radio" name ="satifs" value ="Bof"/> Mi figue, mi raisin
+					<p> Si non, expliquez pourquoi vous n'avez pas aimé.</p>
+					<textarea id="raison" name="raison" rows="3" cols="33" placeholder="Pourquoi?"></textarea>
+					<h2> Merci d'avoir participé à ce formulaire. </h2>
+			</fieldset>
+
+			<input type="submit" value="Validez" />
+			<input type="reset" value="Annulez"/>
+		</form>
+	</div>
+</body>
+</html>
+  
+  
+  
+  

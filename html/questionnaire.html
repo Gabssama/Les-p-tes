@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <title>Questionnaire</title>
+</head>
+<body>
+<header>
+    <p>LES PATES</p>
+ 
+    <nav>
+        <p>
+          <a href="../index.html">Accueil |</a>
+            <a href="../html/questionnaire.html"> Vos habitudes |</a>
+            <a href="../html/lesrecettes.html"> Les Recettes |</a>
+            <a href="../html/formulaire_pate.html"> Contact</a>
+        </p>
+
+    </nav>
+
+</header>
+<main>
+
+    <p id=titre>Questionnaire concernant la consommation des p&acirc;tes alimentaires :</p>
+    <form method="get">
+        <fieldset>
+            <legend>Question 1</legend>
+            <p>En moyenne, à quelle fréquence achetez-vous des p&acirc;tes alimentaires</p>
+            <p>
+                <label><input type="radio" name="q1" value="1"> plus de 3 fois par semaine </label><br>
+                <label><input type="radio" name="q1" value="2"> 2 fois par semaine </label><br>
+                <label><input type="radio" name="q1" value="3"> 1 fois par semaine </label><br>
+                <label><input type="radio" name="q1" value="4"> 1 fois par mois </label><br>
+            </p>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Question 2</legend>
+            <p>Vous consommez en majorité ?</p>
+
+            <p>
+                <label><input type="radio" name="q2" value="1"> les p&acirc;tes s&egrave;ches</label><br>
+                <label><input type="radio" name="q2" value="2"> les p&acirc;tes fra&icirc;ches</label><br>
+                <label><input type="radio" name="q2" value="3"> les p&acirc;tes B&acirc;tons/ficelles</label><br>
+            </p>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Question 3</legend>
+            <p>Quelles sont vos crit&egrave;res d'achat des p&acirc;tes alimentaires ?</p>
+
+            <p>
+                <label><input type="radio" name="q3" value="1"> valeur nutritionelle</label><br>
+                <label><input type="radio" name="q3" value="2"> prix</label><br>
+                <label><input type="radio" name="q3" value="3"> l'emballage</label><br>
+            </p>
+            <p>
+                <label for="q3_more">Autre :</label><br>
+                <textarea id="q3_more" name="q3_comment" cols="100" rows="5"></textarea><br>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Question 4</legend>
+            <p>Quelles sont les marques des p&acirc;tes que vous connaissez ?</p>
+            <table>
+                <tbody>
+                <tr>
+                    <td><input id="m1" type="checkbox" name="q3" value="m1"></td>
+                    <td><label for="m1">Lustucru </label></td>
+                </tr>
+                <tr>
+                    <td><input id="m2" type="checkbox" name="q3" value="m2"></td>
+                    <td><label for="m2">Giovanni-rana </label></td>
+                </tr>
+                <tr>
+                    <td><input id="m3" type="checkbox" name="q3" value="m3"></td>
+                    <td><label for="m3">Saint-jean </label></td>
+                </tr>
+                <tr>
+                    <td><input id="m4" type="checkbox" name="q3" value="m4"></td>
+                    <td><label for="m4">Auchan </label></td>
+                </tr>
+                <tr>
+                    <td><input id="m5" type="checkbox" name="q3" value="m5"></td>
+                    <td><label for="m5">Carrefour </label></td>
+                </tr>
+                <tr>
+                    <td><input id="m6" type="checkbox" name="q3" value="m6"></td>
+                    <td><label for="m6">L-italie-des-pates </label></td>
+                </tr>
+                <tr>
+                    <td><input id="m7" type="checkbox" name="q3" value="m7"></td>
+                    <td><label for="m7">Rana </label></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <p>
+                <label>Autre :<br>
+                    <textarea id="q4" name="q3_comment" cols="100" rows="5" required></textarea>
+                </label>
+            </p>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Question 5</legend>
+            <p>Pensez-vous que les pâtes font partie des aliments incontournables des sportifs ?</p>
+
+            <p>
+                <label><input type="radio" name="q5" value="1" checked> d'accord</label><br>
+                <label><input type="radio" name="q5" value="2"> pas d'accord</label><br>
+                <label><input type="radio" name="q5" value="3"> sans opinion</label><br>
+            </p>
+
+        </fieldset>
+        <p>
+            <button type="reset">Annuler</button>
+            <button type="submit">Envoyer</button>
+        </p>
+    </form>
+</main>
+</body>
+</html>
